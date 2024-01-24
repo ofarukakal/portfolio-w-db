@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}	
+
+<a href="project-request">
+	<h3>
+		Project Request 
+	</h3>
+	</a>
+
+<header>
+	<h1>Data Analysis Portfolio Page<br /></h1>
+	<p>Welcome to my data analyst portfolio. As a skilled data analyst, I am passionate about transforming complex data into actionable insights that drive business outcomes. In this portfolio, you will find a collection of my professional work that showcases my expertise in data analysis and visualization.</p>
+	<p>Each project in my portfolio is carefully crafted to demonstrate my ability to solve real-world problems using data-driven methodologies. From data visualization dashboards to statistical models each project is accompanied by a clear and concise description of the problem I was trying to solve, the methods and techniques I used, and the insights or recommendations I provided based on my findings.</p>
+	<p>My proficiency in different tools and technologies used in data analysis is also highlighted in my portfolio. Whether it's programming languages like Python, data visualization platforms like Tableau or PowerBI, I have demonstrated my ability to use these tools to extract meaningful insights from complex datasets.</p>
+	<p>Ultimately, my portfolio is a testament to my analytical skills, attention to detail, and problem-solving abilities. By presenting my work in a clear and concise manner, I hope to provide potential employers or clients with a comprehensive overview of my expertise in data analysis and visualization. I am excited to share my portfolio with you and look forward to the opportunity to collaborate on future projects.</p>
+	
+	<p>Now I am available for a Junior Data Analyst role.</p>
+	
+	<p>I also get a job as a freelancer.</p>
+
+	<li><a id="upwork" target= "_blank"href="https://www.upwork.com/freelancers/~014f0b8a19c0701003" class=""><span class="label">Here is my Upwork Profile.</span></a></li>
+
+	
+	<li><a id="resume" target= "_blank"href="https://drive.google.com/file/d/10-EXHrzFFG1Go_BEYqhYxOPI1pX-LR26/view?usp=drive_link" class=""><span class="label">You can access my CV / Resume here.</span></a></li>
+</header>
+<section class="tiles">
+<article class="style3">
+	<span class="image">
+		<img src= "{{ url_for('static', filename='images/pic3.jpg') }}" alt="" />
+	</span>
+	<a target= "_blank" href="/terrorism-analysis">
+		<h2>Worldwide Terrorism Analysis</h2>
+		<div class="content">
+			<p>Analysis of Worldwide Terrorist Attacks Since 1970</p>
+		</div>
+	</a>
+</article>
+<article class="style1">
+	<span class="image">
+		<img  src="{{ url_for('static', filename='images/pic1.jpg') }}" alt="" />
+	</span>
+	<a target= "_blank" href='/covid-analysis'> 
+		<h2>COVID-19 <br /> Analysis</h2>
+		<div class="content">
+			<p>Analysis of COVID-19 Data <br/> From 15 Oct 2022</p>
+		</div>
+	</a>
+</article>
+<article class="style4">
+	<span class="image">
+		<img  src="{{ url_for('static', filename='images/pic4.jpg') }}" alt="" />
+	</span>
+	<a target= "_blank" href='/rental-house-analysis'>	
+		<h2>Rental House Analysis</h2>
+		<div class="content">
+			<p>Rental House Analysis using Web Scrapping with Selenium</p>
+		</div>
+	</a>
+</article>
+<article class="style2">
+	<span class="image">
+		<img  src="{{ url_for('static', filename='images/pic2.jpg') }}" alt="" />
+	</span>
+	<a target= "_blank" href="/co2-emission-analysis">			
+		<h2>CO2 Emission Analysis </h2>
+		<div class="content">
+			<p>CO2 Emission Analysis by Car Brands</p>
+		</div>
+	</a>
+</article>
+
+</section>
+
+{% endblock %}

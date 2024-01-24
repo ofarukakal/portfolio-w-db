@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}	
+
+<a href="project-request">
+	<h3>
+		Project Request 
+	</h3>
+	</a>
+
+<header>
+	<h1>Projects Database Page<br /></h1>
+	<p>
+		Here is the list of projects that I have done.
+		You can o see the details of my project. <br/>
+		If u want to delete a project request, you can write the project name and click on the delete button.
+	</p>
+
+	<hr>
+	
+	{% for project in projects %}
+		<li>{{ project[0] }}</li>
+		<ul>{{ project[1] }}</ul>
+	{% endfor %}
+
+	<hr>
+
+	<h2>Delete a Project</h2>
+
+	<form type="delete" method="POST">
+		<input type="text" placeholder="Project Name" name="del_project_name"><br/>
+		<input type="submit" value="Delete">
+	</form>
+	
+</header>
+
+{% endblock %}
